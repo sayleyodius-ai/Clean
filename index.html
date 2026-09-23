@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vérification</title>
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- DEMO NOTICE -->
+  <div class="demo-notice">
+  </div>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+
+    <div class="brand-country">
+      <div class="flag">
+        🇧🇷
+      </div>
+
+      <span>BRASIL</span>
+    </div>
+
+    <button class="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+
+  <!-- HEADER -->
+  <section class="government-header">
+
+    <div class="ministry-logo">
+      <div class="fake-emblem">
+        ★
+      </div>
+
+      <div>
+        <h1>Ministère des Affaires Étrangères</h1>
+        <p>République Fédérative du Brésil</p>
+      </div>
+    </div>
+
+
+    <!-- LANGUAGE / ACCESSIBILITY -->
+    <div class="accessibility">
+
+      <div class="language">
+        <span class="fr-flag">🇫🇷</span>
+        <span>Français</span>
+        <span class="arrow">▼</span>
+      </div>
+
+      <button>A+</button>
+      <button>A-</button>
+      <button>C</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- BLUE MENU BAR -->
+  <div class="blue-menu">
+
+    <button class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-content">
+      <h2>VÉRIFICATION DE L’AUTHENTICITÉ</h2>
+    </div>
+
+  </section>
+
+
+  <!-- MAIN -->
+  <main class="container">
+
+
+    <!-- RECOVERY DATA -->
+    <section class="panel">
+
+      <div class="panel-title">
+
+        <button class="collapse">
+          ▲
+        </button>
+
+        <h3>DONNÉES DE RÉCUPÉRATION</h3>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>
+          Dossier <strong>*</strong>
+
+          <button class="help">?</button>
+        </label>
+
+        <input
+          type="text"
+          id="dossier"
+          value="251006-505544"
+          autocomplete="off"
+        >
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>
+          Code
+
+          <button class="help">?</button>
+        </label>
+
+        <input
+          type="text"
+          id="code"
+          value="4SSP3AYEG3P3UK2H"
+          autocomplete="off"
+        >
+
+      </div>
+
+
+      <!-- BUTTONS -->
+      <div class="buttons">
+
+        <button
+          class="btn-back"
+          type="button"
+          onclick="goBack()">
+          RETOUR
+        </button>
+
+
+        <button
+          class="btn-verify"
+          type="button"
+          onclick="demoVerify()">
+          VÉRIFIER L’AUTHENTICITÉ
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- RESULT -->
+    <section class="panel result-panel">
+
+      <div class="panel-title">
+
+        <button class="collapse">
+          ▲
+        </button>
+
+        <h3>RÉSULTAT DE LA RECHERCHE</h3>
+
+      </div>
+
+
+      <div id="result">
+
+        <div class="info-box">
+
+          <div class="info-icon">
+            i
+          </div>
+
+          <p>
+            Veuillez saisir le numéro de dossier et le code,
+            puis cliquer sur « Vérifier l’authenticité »
+            pour consulter le résultat.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-item">
+      <strong>SERPRO</strong>
+      <small>Interface</small>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-item">
+      <strong>Ministère des Affaires Étrangères</strong>
+      <small>Maquette officielle</small>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-item">
+      <strong>Gouvernement Fédéral</strong>
+      <small></small>
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

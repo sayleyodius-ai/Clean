@@ -1,0 +1,590 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #fff;
+  color: #33415c;
+}
+
+body {
+  min-height: 100vh;
+}
+
+
+/* DEMO */
+
+.demo-notice {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px;
+  letter-spacing: .5px;
+}
+
+
+/* TOP BAR */
+
+.topbar {
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.brand-country {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 25px;
+  border-right: 1px solid #ddd;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.flag {
+  font-size: 29px;
+}
+
+
+/* HAMBURGER */
+
+.hamburger,
+.menu-icon {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-right: 25px;
+}
+
+.hamburger span,
+.menu-icon span {
+  display: block;
+  width: 38px;
+  height: 5px;
+  background: #555;
+  margin: 6px 0;
+}
+
+
+/* GOVERNMENT HEADER */
+
+.government-header {
+  padding: 28px 30px 30px;
+  background: #fff;
+}
+
+.ministry-logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.fake-emblem {
+  width: 85px;
+  height: 85px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 45px;
+  color: #075aa9;
+
+  border: 5px solid #d7bd62;
+}
+
+.ministry-logo h1 {
+  margin: 0;
+
+  font-size: 29px;
+  color: #075aa9;
+  font-weight: 700;
+}
+
+.ministry-logo p {
+  margin: 5px 0 0;
+
+  font-size: 18px;
+  color: #075aa9;
+}
+
+
+/* ACCESSIBILITY */
+
+.accessibility {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+}
+
+.language {
+  width: 300px;
+  height: 52px;
+
+  border: 2px solid #2167a8;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 0 15px;
+
+  color: #2e639a;
+  font-size: 16px;
+}
+
+.fr-flag {
+  font-size: 25px;
+}
+
+.arrow {
+  margin-left: auto;
+}
+
+.accessibility button {
+  height: 52px;
+  min-width: 52px;
+
+  border: 2px solid #2167a8;
+  background: #fff;
+
+  color: #2167a8;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+/* BLUE MENU */
+
+.blue-menu {
+  height: 85px;
+
+  background: #066bc9;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 28px;
+}
+
+.menu-icon span {
+  background: #fff;
+}
+
+
+/* HERO */
+
+.hero {
+  height: 160px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 24, 52, .96),
+      rgba(7, 35, 70, .78)
+    );
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      circle at 70% 45%,
+      rgba(255,255,255,.12),
+      transparent 35%
+    );
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 35px;
+}
+
+.hero h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 31px;
+  font-weight: 600;
+
+  letter-spacing: .3px;
+}
+
+
+/* MAIN */
+
+.container {
+  width: 94%;
+  max-width: 1200px;
+
+  margin: 25px auto 40px;
+}
+
+
+/* PANELS */
+
+.panel {
+  margin-bottom: 35px;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 2px solid #2167a8;
+
+  margin-bottom: 35px;
+}
+
+.panel-title h3 {
+  margin: 0;
+  padding: 0 0 5px 17px;
+
+  color: #2167a8;
+
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.collapse {
+  width: 42px;
+  height: 42px;
+
+  border: 0;
+  background: #0868bf;
+
+  color: #fff;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+
+/* FORM */
+
+.form-group {
+  margin-bottom: 35px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 21px;
+  color: #47536d;
+}
+
+.form-group label strong {
+  color: #c22;
+}
+
+.help {
+  display: inline-flex;
+
+  width: 34px;
+  height: 34px;
+
+  margin-left: 5px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #166ab0;
+  background: #fff;
+
+  color: #166ab0;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+
+  height: 58px;
+
+  padding: 0 15px;
+
+  border: 1px solid #aaa;
+
+  background: #fff;
+
+  color: #4c566d;
+
+  font-size: 19px;
+
+  outline: none;
+}
+
+input:focus {
+  border-color: #0868bf;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+  margin-top: 70px;
+}
+
+.buttons button {
+  width: 100%;
+  height: 58px;
+
+  font-family: inherit;
+  font-size: 19px;
+
+  cursor: pointer;
+}
+
+.btn-back {
+  background: #fff;
+
+  color: #2167a8;
+
+  border: 2px solid #2167a8;
+
+  margin-bottom: 14px;
+}
+
+.btn-verify {
+  background: #0868cf;
+
+  color: #fff;
+
+  border: 0;
+}
+
+.btn-verify:hover {
+  background: #075cae;
+}
+
+
+/* RESULT */
+
+.result-panel {
+  margin-top: 15px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: #e9f5ff;
+
+  border-radius: 8px;
+
+  padding: 20px 25px;
+
+  color: #075fae;
+}
+
+.info-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #0868bf;
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.info-box p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #052c55;
+
+  color: #fff;
+
+  min-height: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 35px;
+
+  padding: 35px 25px;
+}
+
+.footer-item {
+  min-width: 200px;
+
+  text-align: center;
+}
+
+.footer-item strong {
+  display: block;
+
+  font-size: 22px;
+}
+
+.footer-item small {
+  display: block;
+
+  margin-top: 8px;
+
+  font-size: 12px;
+}
+
+.footer-separator {
+  width: 1px;
+  height: 80px;
+
+  background: rgba(255,255,255,.5);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .brand-country {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 17px;
+  }
+
+  .hamburger {
+    margin-right: 15px;
+  }
+
+  .hamburger span {
+    width: 32px;
+  }
+
+  .government-header {
+    padding: 25px 20px;
+  }
+
+  .ministry-logo {
+    gap: 14px;
+  }
+
+  .fake-emblem {
+    width: 60px;
+    height: 60px;
+
+    font-size: 30px;
+  }
+
+  .ministry-logo h1 {
+    font-size: 19px;
+  }
+
+  .ministry-logo p {
+    font-size: 13px;
+  }
+
+  .accessibility {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .language {
+    width: 100%;
+  }
+
+  .blue-menu {
+    height: 70px;
+  }
+
+  .hero {
+    height: 105px;
+  }
+
+  .hero-content {
+    padding: 0 24px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    width: 91%;
+    margin-top: 22px;
+  }
+
+  .panel-title h3 {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 18px;
+  }
+
+  input {
+    height: 55px;
+    font-size: 17px;
+  }
+
+  .buttons {
+    margin-top: 55px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-separator {
+    width: 80%;
+    height: 1px;
+  }
+
+}
