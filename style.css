@@ -611,3 +611,13 @@ footer {
   object-fit: contain;
   margin-right: 15px;
 }
+/* DOCUMENT IMAGE - NOIR LINE REMOVE */
+#result img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+}
