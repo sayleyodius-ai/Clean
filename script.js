@@ -68,45 +68,42 @@ function demoVerify() {
 
     const result = document.getElementById("result");
 
-    if (found) {
+        if (found) {
 
-    result.innerHTML = `
-        <div class="situation-result">
-            <span class="situation-label">
-                SITUATION
-            </span>
+        result.innerHTML = `
+            <div class="situation-result">
+                <span class="situation-label">
+                    SITUATION
+                </span>
 
-            <span class="situation-value">
-                Valido
-            </span>
-        </div>
+                <span class="situation-value">
+                    Valido
+                </span>
+            </div>
 
-        <div style="padding:20px">
-            <img
-                src="${found.image}"
-                alt="Document DEMO"
-                style="
-                    width:100%;
-                    border:1px solid #ccc;
-                    display:block;
-                "
-            >
-        </div>
-    `;
+            <div style="padding:20px">
+                <img
+                    src="${found.image}"
+                    alt="Document DEMO"
+                    style="
+                        width:100%;
+                        border:1px solid #ccc;
+                        display:block;
+                    "
+                >
+            </div>
+        `;
 
-} else {
+    } else {
 
-    result.innerHTML = `
-        <div class="info-box">
-            <div class="info-icon">!</div>
+        result.innerHTML = `
+            <div class="info-box">
+                <div class="info-icon">!</div>
 
-            <p>
-                Aucun résultat trouvé.
-            </p>
-        </div>
-    `;
-    }
-    } 
+                <p>
+                    Aucun résultat trouvé.
+                </p>
+            </div>
         `;
     }
 }
