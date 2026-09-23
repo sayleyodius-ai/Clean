@@ -242,6 +242,23 @@ body {
   letter-spacing: .3px;
 }
 
+.situation-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 1px solid #9bbfe3;
+  font-size: 18px;
+}
+
+.situation-label {
+  color: #1671bd;
+  font-weight: 600;
+}
+
+.situation-value {
+  color: #666;
+}
 
 /* MAIN */
 
