@@ -1,4 +1,5 @@
-function demoVerify() {
+
+function demoVerifyMessage() {
 
     const dossier = document.getElementById("dossier").value.trim();
     const code = document.getElementById("code").value.trim();
@@ -39,6 +40,7 @@ function goBack() {
     history.back();
 }
 
+
 function demoVerify() {
 
     const dossier = document.getElementById("dossier").value.trim();
@@ -66,37 +68,37 @@ function demoVerify() {
 
     const result = document.getElementById("result");
 
-    if(found){
+    if (found) {
 
         result.innerHTML = `
+            <div class="situation-result">
+
+                <span class="situation-label">
+                    SITUATION
+                </span>
+
+                <span class="situation-value">
+                    Valido
+                </span>
+
+            </div>
+
             <div style="padding:20px">
+
                 <img
                     src="${found.image}"
+                    alt="Document DEMO"
                     style="
                         width:100%;
                         border:1px solid #ccc;
+                        display:block;
                     "
                 >
+
             </div>
         `;
 
-    } 
-    function demoVerify() {
-  const result = document.getElementById("result");
-
-  result.innerHTML = `
-    <div class="situation-result">
-      <span class="situation-label">SITUATION</span>
-      <span class="situation-value">Valido</span>
-    </div>
-  `;
-}
-
-function goBack() {
-  window.history.back();
-}
-    
-    else {
+    } else {
 
         result.innerHTML = `
             <div class="info-box">
