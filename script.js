@@ -63,7 +63,7 @@ function demoVerify() {
                     alt="Document DEMO"
                     style="
                         width:100%;
-                        border:1px solid #ccc;
+                        border:0;
                         display:block;
                     "
                 >
