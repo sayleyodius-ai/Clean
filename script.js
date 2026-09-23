@@ -80,7 +80,23 @@ function demoVerify() {
             </div>
         `;
 
-    } else {
+    } 
+    function demoVerify() {
+  const result = document.getElementById("result");
+
+  result.innerHTML = `
+    <div class="situation-result">
+      <span class="situation-label">SITUATION</span>
+      <span class="situation-value">Valido</span>
+    </div>
+  `;
+}
+
+function goBack() {
+  window.history.back();
+}
+    
+    else {
 
         result.innerHTML = `
             <div class="info-box">
